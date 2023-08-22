@@ -1,14 +1,7 @@
 #
-# board.py (Final project)
+# board.py
 #
 # A Board class for the Eight Puzzle
-#
-# name: David Kwon
-# email: day.kwon@bu.edu
-#
-# If you worked with a partner, put their contact info below:
-# partner's name:
-# partner's email:
 #
 
 # a 2-D list that corresponds to the tiles in the goal state

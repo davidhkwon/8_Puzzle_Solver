@@ -1,14 +1,7 @@
 #
-# eight_puzzle.py (Final project)
+# eight_puzzle.py
 #
 # driver/test code for state-space search on Eight Puzzles   
-#
-# name: David Kwon
-# email: daykwon@bu.edu
-#
-# If you worked with a partner, put their contact info below:
-# partner's name:
-# partner's email:
 #
 
 from searcher import *

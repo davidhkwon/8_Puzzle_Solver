@@ -1,14 +1,7 @@
 #
-# searcher.py (Final project)
+# searcher.py
 #
 # classes for objects that perform state-space search on Eight Puzzles  
-#
-# name: David Kwon
-# email: daykwon@bu.edu
-#
-# If you worked with a partner, put their contact info below:
-# partner's name:
-# partner's email:
 #
 
 import random

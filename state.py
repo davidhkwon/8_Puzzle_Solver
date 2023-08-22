@@ -1,14 +1,7 @@
 #
-# state.py (Final project)
+# state.py
 #
 # A State class for the Eight Puzzle
-#
-# name: David Kwon
-# email: day.kwon@bu.edu
-#
-# If you worked with a partner, put their contact info below:
-# partner's name:
-# partner's email:
 #
 
 from board import *

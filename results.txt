@@ -2,12 +2,12 @@ puzzles with 5-move optimal solutions
 -------------------------------------
 algorithm                num. solved    avg. moves    avg. states tested
 ------------------------------------------------------------------------
-random				           10		          5.8			      231.3
-BFS				               10		          5.0			      47.1
-DFS (depth limit 20)		 10		          16.2			    19072.7			
-DFS (depth limit 50)		 10		          48.2			    49043.0	
-Greedy Search (w/ h1)    10		          5.4			      70.3 
-A* (w/ h1)			         10		          5.0			      6.5
+random                   10             5.8           231.3
+BFS                      10             5.0           47.1
+DFS (depth limit 20)     10             16.2          19072.7			
+DFS (depth limit 50)		 10             48.2          49043.0	
+Greedy Search (w/ h1)    10             5.4           70.3 
+A* (w/ h1)               10             5.0           6.5
 
 
 puzzles with 10-move optimal solutions

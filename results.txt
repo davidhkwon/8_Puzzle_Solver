@@ -1,0 +1,88 @@
+puzzles with 5-move optimal solutions
+-------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+random				           10		          5.8			      231.3
+BFS				               10		          5.0			      47.1
+DFS (depth limit 20)		 10		          16.2			    19072.7			
+DFS (depth limit 50)		 10		          48.2			    49043.0	
+Greedy Search (w/ h1)    10		          5.4			      70.3 
+A* (w/ h1)			         10		          5.0			      6.5
+
+
+puzzles with 10-move optimal solutions
+-------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+random				           9		          11.8			    6205.9				
+BFS				               10		          10			      747.4
+DFS (depth limit 20)		 10		          18.8			    24858.0
+DFS (depth limit 50)		 10		          49.2			    92287.3
+Greedy Search (w/ h1)	   8		          76.0			    325.625	 
+A* (w/ h1)			         10		          10.0			    27.3			
+
+
+puzzles with 15-move optimal solutions
+-------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+random				           4		          19.0			    20077.25
+BFS				               10		          15.0			    12672.0
+DFS (depth limit 20)		 10		          17.8			    68659.0				
+DFS (depth limit 50)		 10		          48.6			    111406.0		
+Greedy Search (w/ h1)    6		          90.3			    2718.0	 
+A* (w/ h1)               10		          15.0			    313.8
+
+
+Within my test trials, I tried giving each search about 45 seconds before terminating. Unsprisingly, most algoritms became more inefficient as each puzzle increased in moves. The only exception I found from my test trials was A*, which produced the best results in time, average moves, and average states tested. I found that random was by far the worst algorithm out of the five, especially when scaled up. BFS was I'd say the the second best out of the five algoritms. DFS with a lower depth limit definitely outperformed DFS with a higher depth limit. In terms of time, both DFS' weren't too bad, however their average states tested were among the highested out of the five. As for Greedy, it was way too inconsistent. Other than random, Greedy had the lowest efficiency in terms of number of puzzles solved. 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+heuristic h2
+------------
+This heuristic compares each tile's current position and finds where it should be in GOAL_TILES. Going through each tile, eventually, this heuristic will determine which tile will be given priority.
+
+
+puzzles with 18-move optimal solutions
+--------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+Greedy (h1)		           8		          145.75		    8345.75
+Greedy (h2)		           10		          116.2			    450.0		
+A* (h1)		               10		          18.0			    1602.0
+A* (h2)		               10		          18.0			    359.9
+
+
+puzzles with 21-move optimal solutions
+--------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+Greedy (h1)		           5		          104.6			    4172.6
+Greedy (h2)		           10		          104.0			    379.9		
+A* (h1)		               10		          21.0			    6301.7			
+A* (h2)		               10		          21.0			    906.3		
+
+
+puzzles with 24-move optimal solutions
+--------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+Greedy (h1)		           6		          123.67		    2856.17
+Greedy (h2)		           10		          111.0			    403.8		
+A* (h1)		               2		          24.0			    28114.5			
+A* (h2)		               10		          24.0			    2493.0
+
+
+puzzles with 27-move optimal solutions
+--------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+Greedy (h1)		           6		          123.67		    2586.17
+Greedy (h2)		           10		          111.0			    403.8			
+A* (h1)		               0		          0			        0
+A* (h2)		               10		          24.0			    2493.0
+
+Once again, I gave each search about 45 seconds before terminating. As expected, Greedy with h1 became even more inefficient. A* was running relatively well until we got to 24-move optimal solutions. As for h2, both Greedy and A* were able to efficient consistently when it came to time, number solved, average moves, and average states tested.    
+

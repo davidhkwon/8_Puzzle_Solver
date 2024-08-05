@@ -68,20 +68,19 @@ puzzles with 24-move optimal solutions
 --------------------------------------
 algorithm                num. solved    avg. moves    avg. states tested
 ------------------------------------------------------------------------
-Greedy (h1)              6		          123.67		    2856.17
-Greedy (h2)              10		          111.0			    403.8		
-A* (h1)                  2		          24.0			    28114.5			
-A* (h2)                  10		          24.0			    2493.0
+Greedy (h1)              6              123.67        2856.17
+Greedy (h2)              10             111.0         403.8		
+A* (h1)                  2              24.0          28114.5			
+A* (h2)                  10             24.0          2493.0
 
 
 puzzles with 27-move optimal solutions
 --------------------------------------
 algorithm                num. solved    avg. moves    avg. states tested
 ------------------------------------------------------------------------
-Greedy (h1)              6		          123.67		    2586.17
-Greedy (h2)              10		          111.0			    403.8			
-A* (h1)                  0		          0			        0
-A* (h2)                  10		          24.0			    2493.0
+Greedy (h1)              6              123.67        2586.17
+Greedy (h2)              10             111.0         403.8			
+A* (h1)                  0              0             0
+A* (h2)                  10             24.0          2493.0
 
-Once again, I gave each search about 45 seconds before terminating. As expected, Greedy with h1 became even more inefficient. A* was running relatively well until we got to 24-move optimal solutions. As for h2, both Greedy and A* were able to efficient consistently when it came to time, number solved, average moves, and average states tested.    
-
+Once again, I gave each search about 45 seconds before terminating. As expected, Greedy with h1 became even more inefficient. A* was running relatively well until we got to 24-move optimal solutions. As for h2, both Greedy and A* were able to efficient consistently when it came to time, number solved, average moves, and average states tested.
